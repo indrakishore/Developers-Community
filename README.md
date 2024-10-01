@@ -6,7 +6,7 @@ You are welcomed to contribute in the repository. For contributions in the repos
 
 ## Table of contents
 
-- [Contribution Guidelines](./Contributing.md)
+- [Contribution Guidelines](https://github.com/indrakishore/Developers-Community/blob/main/contributing.md)
 
 ### Moderator
 
