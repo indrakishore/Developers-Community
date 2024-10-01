@@ -29,7 +29,7 @@ You'll need a [GitHub account](https://github.com/join)!
     file.__* For example - If you are adding Tim Sort solution, go to Array or Vector folder inside Data Structure
     Section and then create a folder Tim Sort and then add both of your files there.
 
-- [For Creating Pull Request using Git](./PR_using_Git.md)
+- [For Creating Pull Request using Git](https://github.com/indrakishore/Developers-Community/blob/main/Pull_Request_Using_Git.md)
 
 ## Updating your Pull Request
 
