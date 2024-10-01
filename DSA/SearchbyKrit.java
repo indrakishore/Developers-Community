@@ -1,6 +1,6 @@
 package DSA;
 
-public class Search {
+public class SearchbyKrit {
     /*
      * ----------------------------BINARY SEARCH-------------------------------------
      * 
