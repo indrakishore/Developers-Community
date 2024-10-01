@@ -37,10 +37,10 @@
 
 ```
   # Clone the Repository
-  >>> git clone https://github.com/shoaibrayeen/Programmers-Community
+  >>> git clone https://github.com/indrakishore/Developers-Community
   
   # Go to Directory
-  >>> cd /Programmers-Community
+  >>> cd /Developers-Community
   
   # Make A Branch to Create Your Pull Request
   >>> git checkout -b your_branch_name
