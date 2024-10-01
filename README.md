@@ -10,4 +10,4 @@ You are welcomed to contribute in the repository. For contributions in the repos
 
 ### Moderator
 
-* **Indra Kishore Kumar** - I am A Software Engineer.   [Know More!](https://indrakishore.github.io)
+* **Indra Kishore Kumar** - Software Developer.   [Know More!](https://indrakishore.github.io)
