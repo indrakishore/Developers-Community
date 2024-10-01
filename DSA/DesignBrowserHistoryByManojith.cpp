@@ -19,6 +19,15 @@
     Output:
     [null,null,null,null,"facebook.com","google.com","facebook.com",null,"linkedin.com","google.com","leetcode.com"]
 
+    Time Complexity: O(N) - for visiting N URLs, back and forward operations
+    Space Complexity: O(N) - space for storing the URLs in the browser history nodes 
+
+    Intution : 
+    As we need to move back and forward in the browser history, we need to store the URLs in a data structure that supports this operation efficiently. Doubly linked list provides the best method for insertion as well as backward as forward traversal.
+
+    Approach:  
+    Doubly Linked list is used which holds the url in as a node. The description of each of the method as been written in the code itself.
+
 */
 
 class Node{
