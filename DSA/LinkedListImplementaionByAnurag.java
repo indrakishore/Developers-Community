@@ -3,7 +3,7 @@ package DSA;
 I have tried to code simple implementation of internal working of Singly Linked List, Hope you could understand*/
 
 
-public class LinkedList_Implementation {
+public class LinkedListImplementaionByAnurag {
 
 
 
