@@ -5,7 +5,7 @@
 - [Adding your solution to the repository by creating A Pull Request](#Adding-your-solution-to-the-repository-by-creating-A-Pull-Request)
 - [Updating your Pull Request](#updating-your-pull-request)
 - [Sample Code](#Sample-Code)
-- [How to Write A Function in C++/Java](#How-to-write-a-Function-in-Cpp)
+- [How to Write A Function in C++/Java](#How-to-write-a-Function-in-Cpp/Java)
 
 ## Adding your solution to the repository by creating A Pull Request
 
@@ -18,7 +18,7 @@ You'll need a [GitHub account](https://github.com/join)!
    write a clean code.)
 3. Run your solution on local machines and check for some test cases.
 4. Click on __create new file__ in that folder only.
-5. Copy your code there and with SolutionByA.cpp [ A would be Your Name - Like SolutionByShoaib.cpp ]
+5. Copy your code there and with SolutionByA.cpp [ A would be Your Name - Like SolutionByYourName.cpp ]
 6. After copying, click on __propose new file__.[ At the Bottom]
 7. Then You'd be redirected to new page, where you need to click on __create pull request__.
 8. Add your comments or anything you want to tell abour you solution.
@@ -45,7 +45,7 @@ file extension or because your PR fails.
 5. You should push the solution to the mentioned file. Here's a [code](./Sample%20Code) you need to see before writing
    your code.
 
-## How to write a Function in Cpp
+## How to write a Function in Cpp/Java
 
 ```cpp
     /*
