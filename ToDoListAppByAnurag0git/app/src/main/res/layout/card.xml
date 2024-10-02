@@ -23,20 +23,25 @@
                 android:padding="10dp">
         <TextView
             android:id="@+id/name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:textColor="#07FFB1"
+            android:textColor="#6750A3"
             android:textFontWeight="1000"
+            android:textStyle="bold"
             android:textSize="30dp"/>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:text="Delete"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            />
 
 
             </RelativeLayout>
