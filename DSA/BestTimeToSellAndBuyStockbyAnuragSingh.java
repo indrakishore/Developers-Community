@@ -1,23 +1,48 @@
+/*
+Problem Statement: 
+Find the maximum profit that can be achieved from one transaction (buying and selling) in a given array of stock prices. 
+The i-th element of the array represents the price of a stock on day i.
+
+Approach:
+
+1. We will initialize two variables, "minPrice" and "maxProfit". 
+   - "minPrice" will store the minimum price seen so far, and it is initially set to the maximum possible integer value (`Integer.MAX_VALUE`).
+   - "maxProfit" will store the maximum profit, and it is initially set to 0.
+
+2. We will iterate through each price in the array:
+   - If the current price (arr[i]) is less than "minPrice", we will update "minPrice" to arr[i].
+   - If the current price minus "minPrice" (current profit) is greater than "maxProfit", we update "maxProfit" to this new profit.
+
+3. By the end of the iteration, "maxProfit" will hold the maximum possible profit from one transaction.
+
+Example:
+Input: [7, 1, 5, 3, 6, 4]
+After processing: minPrice = 1, maxProfit = 5 (buy on day 2 at price 1, sell on day 5 at price 6)
+
+Time Complexity: O(n), where n is the number of elements in the array.
+
+*/
+
 public class MaxProfit {
 
     // Method to calculate the maximum profit from one transaction
     public static int maxProfit(int[] prices) {
-        int minPrice = Integer.MAX_VALUE;
-        int maxProfit = 0;
+        int minPrice = Integer.MAX_VALUE; // Initialize minPrice to the maximum integer value
+        int maxProfit = 0; // Initialize maxProfit to 0
 
-        // Loop through each price
+        // Loop through each price in the array
         for (int price : prices) {
-            // Update the minimum price found so far
+            // If the current price is less than the minPrice, update minPrice
             if (price < minPrice) {
                 minPrice = price;
             }
-            // Update maxProfit if the current profit is greater than previous maxProfit
+            // If selling at the current price yields a higher profit, update maxProfit
             else if (price - minPrice > maxProfit) {
                 maxProfit = price - minPrice;
             }
         }
 
-        return maxProfit;
+        return maxProfit; // Return the maximum profit found
     }
 
     // Main method to run test cases
