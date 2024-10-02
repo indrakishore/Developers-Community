@@ -6,21 +6,17 @@ You are welcomed to contribute in the repository. For contributions in the repos
 
 ## Table of contents
 
-- [Contribution Guidelines](https://github.com/indrakishore/Developers-Community/blob/main/contributing.md)
+-  We are committed to fostering an open and welcoming environment. Please read our Contribution GuideLines[Contribution Guidelines](https://github.com/indrakishore/Developers-Community/blob/main/contributing.md) before participation in our community.
 
-- ### Features ✨ 
+## Features ✨ 
 
-## Project Structure<p></p>
+### Project Structure<p></p>
  
-## How to Contribute<p></p>
+### How to Contribute<p></p>
 
-## Featured Projects<p></p>
+### Featured Projects<p></p>
 
-## Code of Conduct Include a brief section on community behavior:
-
-We are committed to fostering an open and welcoming environment. Please read our <a href="CODE_OF_CONDUCT.md">Code of Conduct</a> before participating in our community.
-
-## Project Goals<p></p>
+### Project Goals<p></p>
 
 
 ### Installation 📥
@@ -52,7 +48,10 @@ If you like this project, please give it a star on GitHub! ⭐
 <br>
 
 ### Thankyou For the Visit! ❤️📈
+ 
 
 ### Moderator
 
 * **Indra Kishore Kumar** - Software Developer.   [Know More!](https://indrakishore.github.io)
+
+
