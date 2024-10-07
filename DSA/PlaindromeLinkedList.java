@@ -1,3 +1,14 @@
+// Protocol.java
+// Problem Statement:
+// Given a singly linked list, determine if it is a palindrome. A linked list is considered a palindrome 
+// if it reads the same backward as forward.
+
+// Approach:
+// 1. Traverse the linked list and store the values of the nodes in an ArrayList.
+// 2. Use two pointers, one starting from the beginning and the other from the end of the ArrayList.
+// 3. Compare the values at these pointers until they meet in the middle.
+// 4. If all values are equal, the linked list is a palindrome; otherwise, it is not.
+
 import java.util.ArrayList;
 
 class ListNode {
@@ -35,7 +46,6 @@ class PalindromeLinkedList {
 
         PalindromeLinkedList solution = new PalindromeLinkedList();
         boolean result = solution.isPalindrome(head);
-        System.out.println("Is the given linked list a palindrome? ");
-        System.out.println(result);
+        System.out.println("Is the given linked list a palindrome? " + result);
     }
 }
