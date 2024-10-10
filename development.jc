@@ -1,0 +1,194 @@
+Here are some code examples for development:
+
+Frontend Development
+
+1. HTML/CSS/JS Todo List:
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Todo List</h1>
+  <ul id="todo-list"></ul>
+  <input id="new-todo" type="text" placeholder="Add new todo">
+  <button id="add-todo">Add</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#todo-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#new-todo {
+  width: 50%;
+  height: 30px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#add-todo {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+// script.js
+const todoList = document.getElementById('todo-list');
+const newTodoInput = document.getElementById('new-todo');
+const addTodoButton = document.getElementById('add-todo');
+
+addTodoButton.addEventListener('click', () => {
+  const newTodoText = newTodoInput.value.trim();
+  if (newTodoText !== '') {
+    const newTodoListItem = document.createElement('LI');
+    newTodoListItem.textContent = newTodoText;
+    todoList.appendChild(newTodoListItem);
+    newTodoInput.value = '';
+  }
+});
+
+
+1. ReactJS Counter App:
+
+// App.js
+import React, { useState } from 'react';
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+    </div>
+  );
+}
+
+export default App;
+
+
+Backend Development
+
+1. Node.js/Express.js Server:
+
+// server.js
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+  console.log('Server started on port 3000');
+});
+
+
+1. Python/Flask API:
+
+# (link unavailable)
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/api/data', methods=['GET'])
+def get_data():
+    data = {'name': 'John', 'age': 30}
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+Database Development
+
+1. MySQL Database Schema:
+
+CREATE DATABASE todo_list;
+
+USE todo_list;
+
+CREATE TABLE todos (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  completed BOOLEAN DEFAULT FALSE
+);
+
+
+1. MongoDB Database Schema:
+
+// todos.js
+const mongoose = require('mongoose');
+
+const todoSchema = new mongoose.Schema({
+  title: String,
+  completed: Boolean
+});
+
+const Todo = mongoose.model('Todo', todoSchema);
+
+module.exports = Todo;
+
+
+Machine Learning
+
+1. Python Neural Network (Keras):
+
+# (link unavailable)
+from keras.models import Sequential
+from keras.layers import Dense
+
+model = Sequential()
+model.add(Dense(64, activation='relu', input_shape=(784,)))
+model.add(Dense(32, activation='relu'))
+model.add(Dense(10, activation='softmax'))
+
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+
+1. Java Machine Learning (Weka):
+
+// MachineLearning.java
+import weka.classifiers.Evaluation;
+import weka.classifiers.trees.J48;
+import weka.core.Instances;
+
+public class MachineLearning {
+  public static void main(String[] args) throws Exception {
+    Instances data = new Instances(new java.io.FileReader("data.arff"));
+    data.setClassIndex(data.numAttributes() - 1);
+
+    J48 tree = new J48();
+    tree.buildClassifier(data);
+
+    Evaluation eval = new Evaluation(data);
+    eval.evaluateModel(tree, data);
+  }
+}
+
+
