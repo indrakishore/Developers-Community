@@ -1,3 +1,29 @@
+/* Problem Statement: Implement a Doubly Linked List (DLL) that supports inserting nodes at the front and end, deleting nodes by value, reversing the list, and concatenating with another DLL. Additionally, provide functions to print the list in both forward and reverse order. */
+
+
+/* Approach:
+
+Node Structure: Create a Node class with data, prev, and next pointers.
+
+Insert at Front: Create a new node, link it to the current head, and update the head.
+
+Insert at End: Traverse to the end, attach the new node, and update pointers.
+
+Delete Node: Find the node by value and adjust the surrounding nodes' pointers to remove it.
+
+Reverse: Swap prev and next pointers for each node, then update the head.
+
+Concatenate: Link the last node of the first list to the second list's head.
+
+Print Forward/Reverse: Traverse from head to print forward, or to the end to print backward. */
+
+
+
+
+
+
+
+
 class DoublyLinkedList {
     class Node {
         int data;
