@@ -1,0 +1,103 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #5b5f97;
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #eef2fb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.input-section label{
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+.input-section input[type="number"], .input-section input[type="date"]{
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.input-section button{
+    padding: 7px 15px;
+    background-color: #5b5f97;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.input-section button:hover {
+    background-color: #4a4e82;
+}
+.expenses-list{
+    margin: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+th, td{
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+th{
+    background-color: #ffcc4d;
+    color: #333;
+    font-size: 1.1em;
+}
+tr:hover {
+    background-color: #f9f9f9;
+}
+tfoot td{
+    font-weight: bold;
+    background-color: #e6e6e6;
+}
+.delete-btn{
+    padding: 7px 12px;
+    background-color: #f76d82;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.delete-btn:hover {
+    background-color: #e5576d;
+}
+#clear-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#clear-btn:hover {
+    background-color: #e33b3b;
+}
