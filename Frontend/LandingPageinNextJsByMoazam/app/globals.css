@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+/*   FOR HERO SECTION BACKGROUND NOT CLEAR 
+        // TODO ASK FROM CLIENT
+*/
+
+.coral-bg {
+  background: rgba(255, 127, 80, 0.15);
+}
+
+/* .link-bg {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.05);
+} */
+
+.link-border {
+  border-top: 1px solid rgba(14, 14, 14, 0.1);
+}
+.link-border-bottom {
+  border-bottom: 1px solid rgba(14, 14, 14, 0.1);
+}
+
+.link-box {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-box-bg {
+  border-radius: 5px;
+  /* opacity: 0.5; */
+  background: #fff;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+a:hover {
+  cursor: pointer;
+}
