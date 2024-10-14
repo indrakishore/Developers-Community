@@ -1,3 +1,15 @@
+/* Problem Statement : find the missing numbers in an integer array that contains numbers from 1 to a specified maximum value (e.g., 100).
+The array may have one or more missing numbers, and the goal is to identify and print all the missing numbers.
+
+Approach
+The approach used in this code involves the following steps:
+
+BitSet Initialization: A BitSet is initialized with the size equal to the maximum value (count).
+The BitSet is used to keep track of the numbers present in the array. 
+Marking Present Numbers: Iterate through the given array and mark the corresponding index in the BitSet as true for each number present in the array. 
+Identifying Missing Numbers: Calculate the number of missing elements by subtracting the length of the array from the maximum value (count).
+Iterate through the BitSet to find the indices that are still false, which correspond to the missing numbers.*/
+
 import java.util.Arrays;
 import java.util.BitSet;
  
