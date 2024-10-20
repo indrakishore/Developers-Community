@@ -101,3 +101,39 @@ void reverseLLUsingREC(Node *&head, Node *prev, Node *curr)
     curr->next = prev;
     reverseLLUsingREC(head, curr, nextNode);
 }
+void insertAtHead(Node *&head, Node *&tail, int data) // why pass by reference
+{
+
+    if (head == NULL)
+    {
+        Node *newNode = new Node(data);
+
+        head = newNode;
+        tail = newNode;
+    }
+    else
+    {
+        Node *newNode = new Node(data);
+
+        newNode->next = head;
+
+        head = newNode;
+    }
+}
+void insertAtTail(Node *&head, Node *&tail, int data)
+{
+    if (head == NULL)
+    {
+        Node *newNode = new Node(data);
+
+        head = newNode;
+        tail = newNode;
+    }
+    else
+    {
+        Node *newNode = new Node(data);
+
+        tail->next = newNode;
+        tail = newNode;
+    }
+}
