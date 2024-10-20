@@ -1,3 +1,54 @@
+/*
+   A rat is placed at the starting position of a N x N maze (a 2D grid).
+    The maze contains blocked and open cells. The rat must start from the top-left corner 
+    of the maze (cell 0, 0) and find a path to the bottom-right corner (cell N-1, N-1).
+
+The maze is represented as a 2D grid where:
+
+1 represents an open cell that the rat can move into.
+0 represents a blocked cell that the rat cannot move into.
+The rat can move in four directions:
+
+'U' (Up)
+'D' (Down)
+'L' (Left)
+'R' (Right)
+The task is to find and print all possible paths from the start (top-left) to the 
+destination (bottom-right), following the given movement constraints.
+
+Constraints:
+The rat can only move to open cells (1).
+The rat cannot visit the same cell more than once in a path.
+The rat cannot move out of the maze's boundaries.
+If no path is found, return -1.
+Input Format:
+The first line contains a single integer N (the size of the maze).
+The next N lines each contain N integers, either 1 (open) or 0 (blocked), 
+representing the maze grid.
+Output Format:
+Print all possible paths as strings, where each string contains a sequence of 
+moves ('U', 'D', 'L', 'R').
+Each string should represent a valid path from the start to the destination.
+If no path exists, output -1.
+solution approach: 
+
+We can solve this problem using backtracking. The idea is to try all possible paths
+from the starting cell (0, 0) to the destination cell (N-1, N-1). If we reach the 
+destination, we store the path. Otherwise, we backtrack and try other possible 
+directions.
+*/ 
+
+
+
+
+
+
+
+
+
+
+
+
 #include <iostream>
 #include <vector>
 #include <string>
