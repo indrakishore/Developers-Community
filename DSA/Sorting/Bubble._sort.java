@@ -1,8 +1,8 @@
-// 👉🏻👉🏻bubble sort
+// 👉🏻👉🏻 Bubble Sort
 
 import java.util.Arrays;
 
-public class Bubblesort {
+public class Bubble_sort {
     public static void main(String[] args) {
         int[] arr = {5, 4, -1, 3, 2, 1};  // Example input array
         
@@ -24,9 +24,9 @@ public class Bubblesort {
     }
 }
 
-// 👉🏻👉🏻 time complexcity= O(n^2). 
-//👉🏻👉🏻 space complexcity=O(1)
-// 👉🏻👉🏻logic.
-  // -Comparisons and Swaps: Continuously compare adjacent elements and swap if needed.
-  // -Shrinking Range: After each pass, the unsorted portion of the array shrinks, as the largest elements move to their correct positions.
-  // -End Condition: The outer loop runs until all elements are in the correct order.
+// 👉🏻👉🏻 Time complexity = O(n^2)
+// 👉🏻👉🏻 Space complexity = O(1)
+// 👉🏻👉🏻 Logic:
+// - Comparisons and Swaps: Continuously compare adjacent elements and swap if needed.
+// - Shrinking Range: After each pass, the unsorted portion of the array shrinks, as the largest elements move to their correct positions.
+// - End Condition: The outer loop runs until all elements are in the correct order.
