@@ -1,0 +1,44 @@
+import tkinter as tk
+from tkinter import filedialog
+import pygame
+import sys
+
+class VideoPlayer:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Video Player")
+        self.root.geometry("800x600")
+
+        self.open_btn = tk.Button(self.root, text="Open Video", command=self.open_file)
+        self.open_btn.pack()
+
+        pygame.init()
+        self.screen = pygame.display.set_mode((800, 450))
+        self.clock = pygame.time.Clock()
+
+    def open_file(self):
+        self.filepath = filedialog.askopenfilename()
+        self.play_video()
+
+    def play_video(self):
+        video = pygame.movie.Movie(self.filepath)
+        video_screen = pygame.Surface(video.get_size()).convert()
+
+        video.set_display(video_screen)
+        video.play()
+
+        while video.get_busy():
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    video.stop()
+                    pygame.quit()
+                    sys.exit()
+
+            self.screen.blit(video_screen, (0, 0))
+            pygame.display.update()
+            self.clock.tick(60)
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = VideoPlayer(root)
+    root.mainloop()
