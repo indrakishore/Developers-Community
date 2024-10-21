@@ -1,3 +1,5 @@
+// 👉🏻👉🏻 Q. Insertion sort java.
+
 import java.util.Arrays;
 
 public class Insertion_sort {
@@ -22,6 +24,40 @@ public class Insertion_sort {
     }
 }
 
+// 👉🏻 step by step code explanation
+// Initial Array: arr = {7, 5, 6, 2}
+
+// First Iteration (i = 1):
+
+// ele = arr[1] = 5
+// check = 0 (index of last sorted element)
+// Inner Loop:
+// Compare 5 < 7 (true), so shift 7 to the right: arr = {7, 7, 6, 2}
+// Decrement check: check = -1 (exit the loop)
+// Insert 5 at index check + 1 = 0: arr = {5, 7, 6, 2}
+// Second Iteration (i = 2):
+
+// ele = arr[2] = 6
+// check = 1
+// Inner Loop:
+// Compare 6 < 7 (true), so shift 7 to the right: arr = {5, 7, 7, 2}
+// Decrement check: check = 0
+// Compare 6 < 5 (false), exit the loop.
+// Insert 6 at index check + 1 = 1: arr = {5, 6, 7, 2}
+// Third Iteration (i = 3):
+
+// ele = arr[3] = 2
+// check = 2
+// Inner Loop:
+// Compare 2 < 7 (true), so shift 7 to the right: arr = {5, 6, 7, 7}
+// Decrement check: check = 1
+// Compare 2 < 6 (true), so shift 6 to the right: arr = {5, 6, 6, 7}
+// Decrement check: check = 0
+// Compare 2 < 5 (true), so shift 5 to the right: arr = {5, 5, 6, 7}
+// Decrement check: check = -1 (exit the loop)
+// Insert 2 at index check + 1 = 0: arr = {2, 5, 6, 7}
+// Final Output
+// The final sorted array is printed as [2, 5, 6, 7].
 
 // 👉🏻Time Complexity:
 // Best Case: O(n) — This occurs when the array is already sorted.

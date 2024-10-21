@@ -1,4 +1,4 @@
-// 👉🏻 Selection Sort
+// 👉🏻 Q.Selection Sort java
 
 import java.util.*;
 public class Selection_sort {
@@ -29,6 +29,32 @@ public class Selection_sort {
 // Selection Process: In each pass, find the smallest element in the unsorted part and place it at the correct position.
 // Swapping: Swap the smallest found element with the element at the current index i.
 // Number of Swaps: Unlike Bubble Sort, Selection Sort makes fewer swaps since each pass only performs one swap.
+
+// 👉🏻Code explanation of selection sort.
+// Let's walk through the sorting process for the array {2, 1, 5, 3}.
+
+// Initial array: {2, 1, 5, 3}
+// Iteration 1 (i = 0):
+
+// Current element: 2
+// Find the smallest element in the rest of the array {1, 5, 3}. The smallest is 1.
+// Swap 2 with 1.
+// Array after swap: {1, 2, 5, 3}
+// Iteration 2 (i = 1):
+
+// Current element: 2
+// Find the smallest element in the rest of the array {5, 3}. The smallest is 2 (no need to swap).
+// Array remains: {1, 2, 5, 3}
+// Iteration 3 (i = 2):
+
+// Current element: 5
+// Find the smallest element in the rest of the array {3}. The smallest is 3.
+// Swap 5 with 3.
+// Array after swap: {1, 2, 3, 5}
+// Iteration 4 (i = 3):
+
+// Only one element left (5), so no further action is needed.
+// Final sorted array: [1, 2, 3, 5]
 
 // 👉🏻 Time Complexity:
 // Best, Worst, and Average Case: O(n²)
