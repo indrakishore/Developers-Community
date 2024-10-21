@@ -1,4 +1,4 @@
-// 👉🏻Merge sort.
+// Q.👉🏻Merge sort java.
 import java.util.Arrays; // Importing the Arrays class for easy array manipulation
 
 public class Merge_sort {
@@ -72,6 +72,34 @@ public class Merge_sort {
 
 // 👉🏻logic of the code
 // -The code effectively implements the Merge Sort algorithm using recursion to divide the array and a helper function to merge the sorted sub-arrays.
+
+// 👉🏻 Step by step code explanation
+// Let's walk through the example with the initial array {3, 90, 5}.
+// Initial Call: mergeSort(arr) with arr = {3, 90, 5}
+
+// mid = 1, so it splits into:
+// Left: {3}
+// Right: {90, 5}
+// Left Half: mergeSort({3}) 
+// Since the length is 1, it returns {3}.
+// Right Half: mergeSort({90, 5})
+
+// mid = 1, splits into:
+// Left: {90}
+// Right: {5}
+// Left Half: mergeSort({90}) → returns {90}.
+// Right Half: mergeSort({5}) → returns {5}.
+// Merging Left and Right: merge({90}, {5})
+// Compare 90 and 5: 5 < 90, so mix = {5, 90}.
+// Final Merge: Now we merge the results of the left and right halves.
+
+// Merging {3} and {5, 90} using merge({3}, {5, 90})
+// Compare 3 and 5: 3 < 5, so mix = {3, _, _}.
+// Since 3 is the only element left, it adds the remaining {5, 90}.
+// The final merged array is {3, 5, 90}.
+// Output
+// Finally, the sorted array {3, 5, 90} is printed.
+
 
 // 👉🏻 Time complexity.
 //The time complexity of the Merge Sort algorithm is-O(nlogn).
