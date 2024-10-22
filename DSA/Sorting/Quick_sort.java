@@ -60,6 +60,41 @@ public class QuickSort {
 // Divide and Conquer: The algorithm divides the array into smaller parts based on a pivot and recursively sorts these parts.
 // In-Place Sorting: It does not require additional arrays or lists, making it space efficient.
 
+//👉🏻 code explanation
+//  Let's walk through the sorting process for the array {13, 18, 27, 2, 19, 25}.
+// Initial array: {13, 18, 27, 2, 19, 25}
+// First Call to quick(a, 0, 5)
+// Pivot: 25 (last element)
+// Array traversal:
+// Compare 13 < 25 → swap with itself → {13, 18, 27, 2, 19, 25}
+// Compare 18 < 25 → swap with itself → {13, 18, 27, 2, 19, 25}
+// Compare 27 < 25 → no swap
+// Compare 2 < 25 → swap 2 with 27 → {13, 18, 2, 27, 19, 25}
+// Compare 19 < 25 → swap 19 with 27 → {13, 18, 2, 19, 27, 25}
+// Final swap with pivot: Swap 25 with 27 → {13, 18, 2, 19, 25, 27}
+// Partition index returned: 4
+// Second Call to quick(a, 0, 3)
+// Pivot: 19
+// Array traversal:
+// Compare 13 < 19 → swap with itself → {13, 18, 2, 19, 25, 27}
+// Compare 18 < 19 → swap with itself → {13, 18, 2, 19, 25, 27}
+// Compare 2 < 19 → swap 2 with 18 → {13, 2, 18, 19, 25, 27}
+// Final swap with pivot: Swap 19 with 18 → {13, 2, 18, 19, 25, 27}
+// Partition index returned: 3
+// Third Call to quick(a, 0, 2)
+// Pivot: 18
+// Array traversal:
+// Compare 13 < 18 → swap with itself → {13, 2, 18, 19, 25, 27}
+// Compare 2 < 18 → swap 2 with 13 → {2, 13, 18, 19, 25, 27}
+// Final swap with pivot: Swap 18 with 13 → {2, 13, 18, 19, 25, 27}
+// Partition index returned: 2
+// Fourth Call to quick(a, 0, 1)
+// Pivot: 13
+// Array traversal:
+// Compare 2 < 13 → swap with itself → {2, 13, 18, 19, 25, 27}
+// Final swap with pivot: Swap 13 with itself → {2, 13, 18, 19, 25, 27}
+// Partition index returned: 1
+// Final sorted array: [2, 13, 18, 19, 25, 27]
 
 // 👉🏻Time Complexity:
 // Best Case: O(n log n) - when the pivot divides the array into two equal halves.
