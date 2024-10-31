@@ -1,106 +1,111 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    overflow: hidden;
-  }
-  
-  .container {
-    height: 100vh;
-    width: 100%;
-    background: url("https://images.unsplash.com/photo-1602940659805-770d1b3b9911?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDMyNzEwMQ&ixlib=rb-1.2.1&q=85");
-    background-position: center;
-    background-size: cover;
-    background-clip: border-box;
-    position: relative;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    width: 90%;
-    color: #fff;
-    padding: 10px 0;
-  }
-  
-  h1 {
-    font-size: 3.5rem;
-    font-family: serif;
-    cursor: pointer;
-    box-shadow: 1px 1px 5px 5px #fff;
-  }
-  
-  ul li {
-    list-style-type: none;
-    margin: 0 1rem;
-    display: inline-block;
-  }
-  
-  ul li a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #fff;
-    position: relative;
-  }
-  
-  .content {
-    padding: 0 4rem;
-    position: relative;
-  }
-  
-  .button {
-    background-color: rgba(255, 255, 255, 1);
-    color: red;
-    padding: 15px 69px;
-    margin-top: 2rem;
-    border-radius: 15px 20px;
-    font-size: 1.2rem;
-    position: relative;
-    left: 6.8%;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    transition: all 0.6s ease;
-  }
-  
-  .button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000;
-    box-shadow: 0 0 2px 3px #fff;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1602940659805-770d1b3b9911?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDMyNzEwMQ&ixlib=rb-1.2.1&q=85");
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  color: #fff;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: serif;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 5px #fff;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding: 0.5rem 1rem; /* Added padding for better click area */
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transition for hover */
+}
+
+ul li a:hover {
+  color: darkorange; /* Changed hover color */
+  transform: scale(1.1); /* Added scaling effect on hover */
+}
+
+.content {
+  padding: 0 4rem;
+  position: relative;
+}
+
+.button {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(255, 0, 0, 0.7)); /* Gradient background */
+  color: white; /* Changed text color for contrast */
+  padding: 15px 69px;
+  margin-top: 2rem;
+  border-radius: 15px 20px;
+  font-size: 1.2rem;
+  position: relative;
+  left: 6.8%;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: all 0.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly lighter on hover */
+  color: #000;
+}
+
+h2 {
+  letter-spacing: 3px;
+  color: darkorange;
+  font-size: 5rem;
+  margin-top: 9rem;
+}
+
+@media screen and (max-width: 768px) {
   h2 {
-    letter-spacing: 3px;
-    color: darkorange;
-    font-size: 5rem;
-    margin-top: 9rem;
-  }
-  
-  @media screen and (max-width: 768px) {
-    h2 {
       font-size: 2.4rem;
-    }
-  
-    .button {
-      left: 0;
-    }
-  
-    h1 {
-      font-size: 2.9rem;
-    }
   }
-  
-  @media screen and (max-width: 350px) {
-    .button {
+
+  .button {
+      left: 0;
+  }
+
+  h1 {
+      font-size: 2.9rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .button {
       width: 100%;
       font-size: 1rem;
-    }
-  
-    h2 {
-      font-size: 2rem;
-    }
   }
-  
+
+  h2 {
+      font-size: 2rem;
+  }
+}
